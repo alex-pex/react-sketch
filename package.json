@@ -25,9 +25,9 @@
   "scripts": {
     "clean": "rimraf lib && rimraf build",
     "prebuild": "rimraf lib",
-    "build": "NODE_ENV=production webpack --config webpack.library.cfg.js --display-modules",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.library.cfg.js --display-modules",
     "build:light": "babel ./src --out-dir ./lib",
-    "build:examples": "NODE_ENV=production webpack --config webpack.examples.cfg.js",
+    "build:examples": "cross-env NODE_ENV=production webpack --config webpack.examples.cfg.js",
     "prepublish": "npm run test && npm run build",
     "lint": "eslint ./src",
     "lint:fix": "eslint --fix ./src",
@@ -54,6 +54,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "babel-runtime": "^6.26.0",
     "chai": "^4.1.2",
+    "cross-env": "^5.1.3",
     "css-loader": "^0.28.9",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
@@ -92,11 +93,9 @@
     "webpack-dev-server": "^2.11.1",
     "weinre": "^2.0.0-pre-I0Z7U9OV"
   },
-  "peerDependencies": {
-    "react": ">15.3.0",
-    "react-dom": ">15.3.0"
-  },
   "dependencies": {
-    "prop-types": "^15.6.0"
+    "prop-types": "^15.6.0",
+    "react": "*",
+    "react-dom": "*"
   }
 }
