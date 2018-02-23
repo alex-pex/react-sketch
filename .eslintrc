@@ -1,8 +1,7 @@
 {
   "parser": "babel-eslint",
   "plugins": [
-    "react",
-    "eslint-plugin-react"
+    "react"
   ],
   "env": {
     "browser": true,
