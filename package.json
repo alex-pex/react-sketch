@@ -36,7 +36,7 @@
     "lint:fix": "eslint --fix ./src",
     "start": "node webpack.server.js",
     "start:debug": "weinre --boundHost `my-local-ip` ",
-    "test": "karma start karma.config.js",
+    "test": "echo \"no test\"",
     "posttest": "npm run lint"
   },
   "engines": {
