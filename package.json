@@ -1,6 +1,9 @@
 {
   "name": "react-sketch",
-  "version": "0.4.4",
+  "version": "0.4.4-alexpex.1",
+  "publishConfig": {
+    "registry": "https://nexus.stadline.com/repository/product-private-host/"
+  },
   "description": "Sketch Element for React based applications, backed-up by fabricjs as its core",
   "keywords": [
     "react",
